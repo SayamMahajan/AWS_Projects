@@ -1,0 +1,15 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Simple Node.js app for AWS DevOps dashboard project",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

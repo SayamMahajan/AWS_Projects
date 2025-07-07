@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: devops-dashboard-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: devops-dashboard
+  template:
+    metadata:
+      labels:
+        app: devops-dashboard
+    spec:
+      containers:
+      - name: devops-dashboard
+        image: 970547344803.dkr.ecr.us-east-1.amazonaws.com/devops-dashboard-app:latest
+        ports:
+        - containerPort: 3000
